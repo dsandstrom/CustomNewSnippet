@@ -1,0 +1,13 @@
+[
+    {
+        // "caption": "Tools",
+        // "mnemonic": "T",
+        "id": "tools",
+        "children":
+        [   
+            { "caption": "-", "id": "macros" },
+            { "caption": "-" },
+            { "command": "custom_new_snippet", "caption": "Custom New Snippet…" }
+        ]
+    }
+]
