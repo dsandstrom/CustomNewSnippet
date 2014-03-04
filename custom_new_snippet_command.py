@@ -11,12 +11,10 @@ class CustomNewSnippetCommand(sublime_plugin.WindowCommand):
         v.set_syntax_file('Packages/XML/XML.tmLanguage')
 
         template = """<snippet>
-  <content><![CDATA[
-Hello, \${1:this} is a \${2:snippet}.
-]]></content>
-  <tabTrigger>hello</tabTrigger>
-  <scope>source.python</scope>
-  <description>snippet</description>
+	<content><![CDATA[${4:\$SELECTION}]]></content>
+	<tabTrigger>${3:$2}</tabTrigger>
+	<scope>${1:source.python}</scope>
+	<description>$2</description>
 </snippet>
 """
         v.run_command("insert_snippet", {"contents": template})
